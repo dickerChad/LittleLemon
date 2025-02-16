@@ -1,0 +1,75 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: #fff;
+    flex-wrap: wrap; /* Ajouté pour permettre la rupture de ligne en petites tailles d'écran */
+  }
+  
+  /* Logo */
+  .logo {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0; /* Empêche le logo de se réduire en taille */
+  }
+  
+  /* Menu de navigation */
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+    flex-grow: 1; /* Laisse le menu prendre l'espace disponible */
+    justify-content: flex-end; /* Place le menu à droite */
+    align-items: center; /* Aligne les éléments au centre verticalement */
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .login-button {
+    justify-self: end;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header {
+      padding: 0 1rem; /* Réduit la marge pour les écrans plus petits */
+    }
+  
+    .logo {
+      width: 150px; /* Réduit la taille du logo pour les petits écrans */
+    }
+  
+    .nav-menu {
+      flex-direction: column; /* Change le menu en colonne sur petits écrans */
+      gap: 1rem;
+      width: 100%; /* Prend toute la largeur de l'écran */
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .nav-menu a {
+      font-size: 1.1rem; /* Augmente la taille de police pour les liens sur petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 120px; /* Réduit encore la taille du logo sur très petits écrans */
+    }
+  
+    .nav-menu {
+      gap: 0.5rem;
+    }
+  
+    .nav-menu a {
+      font-size: 1rem; /* Ajuste la taille de police sur très petits écrans */
+    }
+  }
+  

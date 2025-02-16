@@ -1,0 +1,120 @@
+.booking-page {
+    min-height: calc(100vh - 200px);
+    background: linear-gradient(
+      to bottom,
+      #495e57 0%,
+      #495e57 40%,
+      #edefee 40%,
+      #edefee 100%
+    );
+    padding: 2rem 1rem;
+  }
+  
+  .booking-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .booking-content h1 {
+    color: #495e57;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .booking-form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group label {
+    color: #495e57;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.8rem;
+    border: 2px solid #edefee;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #f4ce14;
+    outline: none;
+  }
+  
+  .button-primary {
+    background-color: #f4ce14;
+    color: #333;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(244, 206, 20, 0.3);
+  }
+  
+  .button-primary:active {
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    .booking-section {
+      padding: 1.5rem;
+    }
+  
+    .booking-content h1 {
+      font-size: 2rem;
+    }
+  
+    .form-group label {
+      font-size: 1rem;
+    }
+  }
+  
+  .error {
+    border-color: #ff0000 !important;
+    background-color: #fff8f8;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  button:disabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
