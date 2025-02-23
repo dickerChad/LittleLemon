@@ -3,7 +3,7 @@ import { submitAPI } from "../utils/api";
 import BookingForm from "../components/BookingForm";
 import "../styles/BookingPage.css";
 import { useReducer } from "react";
-import { initializeTimes, updateTimes } from "../reducers/bookingReducer";
+import { initializeTimes, updateTimes } from "../reducers/BookingReducer";
 
 function BookingPage() {
   const navigate = useNavigate();
